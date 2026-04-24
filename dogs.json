@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Kiko",
+        "image": "images/kiko.jpg",
+        "imgalt": "image of shiba in the sun, staring at the camera.",
+        "desc": "A curious little explorer who loves sniffing out new adventures. Kiko is playful, alert, and always ready to turn anything into a game."
+    },
+
+    {
+        "name": "Sora",
+        "image": "images/sora.jpg",
+        "imgalt": "small shiba sitting in the grass staring right at the camera",
+        "desc": "Gentle and observant, Sora enjoys quiet moments just as much as zooming around the yard. A sweet pup with a calm, affectionate side."
+    },
+
+    {
+        "name": "Mochi",
+        "image": "images/mochi.jpg",
+        "imgalt": "small white shiba pup",
+        "desc": "Soft, squishy, and impossible to resist—Mochi is a cuddle expert with a playful streak. Loves belly rubs and being the center of attention."
+    },
+
+    {
+        "name": "Hoshi",
+        "image": "images/hoshi.jpg",
+        "imgalt": "a cute shiba sitting obediently on the road whilst staring at the camera",
+        "desc": "Bright and spirited, Hoshi shines wherever they go. This pup is energetic, confident, and full of personality."
+    },
+
+    {
+        "name": "Taro",
+        "image": "images/taro.jpg",
+        "imgalt": "shiba baby with black fur in the grass staring at the camera",
+        "desc": "A laid-back little companion who takes life one paw at a time. Taro is easygoing, friendly, and happiest by your side."
+    },
+
+    {
+        "name": "Yuki",
+        "image": "images/yuki.jpg",
+        "imgalt": "shiba pup with light fur sitting in the grass, staring at the camera",
+        "desc": "Light on their feet and full of charm, Yuki is a graceful pup with a mischievous sparkle. Loves to play and keep you smiling."
+    }
+]

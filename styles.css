@@ -56,6 +56,7 @@ table {
     --lt-mahogany: #f7a777;
     --shob: #f4bba9;
     --underfluff: #f2e3ce;
+	--tribute: #5A5A5A;
 }
 
 html{
@@ -67,4 +68,97 @@ body{
     background-color: var(--white);
     width: 90%;
     justify-self: center;
+	filter: drop-shadow(0px 16px 50px var(--black));
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h1{
+	font-family: 'Chewy';
+	font-size: 48px;
+	padding: 1.5rem;
+}
+
+h1 > a {
+	text-decoration: none;
+	color: var(--black);
+}
+
+h1 > a:hover{
+	color: var(--lt-mahogany);
+}
+
+header ul{
+	display: flex;
+	gap: 1rem;
+	padding: 1rem;
+}
+
+header li > a{
+	font-family: 'Chewy';
+	font-size: 24px;
+	text-decoration: none;
+	color: var(--black);
+	margin-right: 5rem;
+}
+
+header li > a:hover{
+	color:var(--lt-mahogany);
+}
+
+main{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#info h2{
+	font-family: 'Chewy';
+	font-size: 36px;
+}
+
+#info h3{
+	font-family: 'Chewy';
+}
+
+#info p{
+	font-family: 'Arial';
+}
+
+#tribute{
+	display: block;
+	margin: 0 auto;
+	background-color: var(--tribute);
+	color: var(--white);
+	width: 90%;
+	padding: 1rem 1rem 2rem 1rem;
+	border-radius: 20px;
+}
+
+#tribute h3{
+	font-family: 'Chewy';
+	padding-bottom: 1rem;
+	font-size: 42px;
+}
+
+#tribute img{
+	width: 50%;
+	height: auto;
+	float: left;
+	padding-right: 1rem;
+}
+
+#tribute p{
+	font-family: 'Arial';
+	font-size: 26px;
+	text-align: left;
+}
+
+footer{
+	text-align: center;
+	padding: 1rem;
 }

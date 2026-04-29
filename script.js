@@ -5,6 +5,8 @@ $(function(){
 
 let carouselInfo = document.getElementById("carousel");
 
+let dogs = [];
+
 function fetchDogs(){
     fetch("dogs.json")
 
@@ -21,11 +23,31 @@ function fetchDogs(){
 
     .then(data =>{
         console.log(data)
+        dogs = data;
+        getRandomDogs();
     })
 }
+function getRandomIntInclusive(min, max) {
+    const minCeiled = Math.ceil(min);
+    const maxFloored = Math.floor(max);
+    return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // The maximum is inclusive and the minimum is inclusive
+}
+
+let selectedDogs = [];
+
+let numOfDogs = 0;
 
 function getRandomDogs(){
-    
+    while(numOfDogs < 3){
+        let random = getRandomIntInclusive(0, 5);
+        if(selectedDogs.indexOf(dogs[random])=== -1){
+            selectedDogs.push(dogs[random]);
+            numOfDogs++;
+        }else{
+            getRandomDogs();
+        }
+    }
+    displayDogs();
 }
 
 function displayDogs(){
@@ -33,10 +55,11 @@ function displayDogs(){
         for(let i = 0; i < 3; i++){
             string += `
             <section>
-                <img src="${data[i].image}" alt="${data[i].imgalt}">
-                <h2>${data[i].name}</h2>
-                <p>${data[i].desc}</p>            
+                <img src="${selectedDogs[i].image}" alt="${selectedDogs[i].imgalt}">
+                <h2>${selectedDogs[i].name}</h2>
+                <p>${selectedDogs[i].desc}</p>            
             </section>`
         }
-        carouselInfo.innerHTML += string;
+        carouselInfo.innerHTML = string;
 }
+

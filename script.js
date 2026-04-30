@@ -101,7 +101,6 @@ lightDrk.addEventListener("click", function(){
 });
 
 document.addEventListener("DOMContentLoaded", function (){
-
     let prefMode = localStorage.getItem("mode");
 
     if(prefMode === "dark") {

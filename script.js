@@ -1,3 +1,5 @@
+"use strict";
+
 $(function(){
     $("#info").tabs();
     fetchDogs();

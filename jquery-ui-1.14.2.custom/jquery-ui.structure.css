@@ -10,6 +10,15 @@
  */
 /* Layout helpers
 ----------------------------------*/
+:root{
+	--black: #000;
+    --white: #fff;
+    --drk-beaver: #6e655c;
+    --lt-mahogany: #f7a777;
+    --shob: #f4bba9;
+    --underfluff: #f2e3ce;
+	--tribute: #5A5A5A;
+}
 .ui-helper-hidden {
 	display: none;
 }
@@ -98,8 +107,9 @@
 	padding: .2em;
 }
 .ui-tabs .ui-tabs-nav {
+	background-color: #f2e3ce;
 	margin: 0;
-	padding: .2em .2em 0;
+	padding: .2em;
 }
 .ui-tabs .ui-tabs-nav li {
 	list-style: none;
